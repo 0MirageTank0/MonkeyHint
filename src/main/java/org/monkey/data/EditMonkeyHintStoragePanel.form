@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.monkey.data.MonkeyHintStoragePanel">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="613" height="375"/>
+    </constraints>
+    <properties>
+      <font name="JetBrains Mono" size="14"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="170d6" binding="tabPane">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="e20a9" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="5" left="5" bottom="5" right="5"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="message/language" title-key="textarea.tab"/>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono"/>
+            </properties>
+            <border type="none">
+              <color color="-2104859"/>
+            </border>
+            <children>
+              <scrollpane id="6a3b5">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="JetBrains Mono"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="7b707" class="javax.swing.JTextArea" binding="textArea">
+                    <constraints/>
+                    <properties>
+                      <font name="JetBrains Mono" size="20"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="9a830" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="message/language" title-key="mapview.tab"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <splitpane id="6e33b">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="0" height="0"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <dividerLocation value="162"/>
+                  <dividerSize value="10"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="3cbe2" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="b137d" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="line">
+                          <color color="-2104859"/>
+                        </border>
+                        <children>
+                          <component id="97772" class="javax.swing.JButton" binding="addKey">
+                            <constraints/>
+                            <properties>
+                              <foreground color="-12262097"/>
+                              <hideActionText value="true"/>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="30"/>
+                              <preferredSize width="30" height="30"/>
+                              <text value="+"/>
+                            </properties>
+                          </component>
+                          <component id="bdb62" class="javax.swing.JButton" binding="delKey">
+                            <constraints/>
+                            <properties>
+                              <foreground color="-1755335"/>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="30"/>
+                              <preferredSize width="30" height="30"/>
+                              <text value="-"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="f69dc">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="f2bb9" class="javax.swing.JList" binding="keyList">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="29e16" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="4b198" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="line">
+                          <color color="-2104859"/>
+                        </border>
+                        <children>
+                          <component id="30553" class="javax.swing.JButton" binding="addValue">
+                            <constraints/>
+                            <properties>
+                              <foreground color="-12262097"/>
+                              <horizontalAlignment value="0"/>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="30"/>
+                              <preferredSize width="30" height="30"/>
+                              <text value="+"/>
+                            </properties>
+                          </component>
+                          <component id="fe6f" class="javax.swing.JButton" binding="delValue">
+                            <constraints/>
+                            <properties>
+                              <foreground color="-1755335"/>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="30"/>
+                              <preferredSize width="30" height="30"/>
+                              <text value="-"/>
+                            </properties>
+                          </component>
+                          <component id="36fc9" class="javax.swing.JButton" binding="editValue">
+                            <constraints/>
+                            <properties>
+                              <maximumSize width="30" height="30"/>
+                              <minimumSize width="30" height="30"/>
+                              <preferredSize width="30" height="30"/>
+                              <text value="*"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="8cca2">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="886ef" class="javax.swing.JList" binding="valueList">
+                            <constraints/>
+                            <properties/>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+              <grid id="f3b14" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="2eae5" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <text resource-bundle="message/language" key="save.button"/>
+                    </properties>
+                  </component>
+                  <component id="b6c28" class="javax.swing.JLabel" binding="saveTip">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <text resource-bundle="message/language" key="save.tip"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="NoLabelFor"/>
+    <suppress inspection="MissingMnemonic"/>
+  </inspectionSuppressions>
+</form>

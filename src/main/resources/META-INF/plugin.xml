@@ -1,0 +1,29 @@
+<idea-plugin>
+
+    <id>io.github.0mirage_tank0.monkey_hint</id>
+    <name>MonkeyHint</name>
+
+    <depends>com.intellij.modules.python</depends>
+    <depends>Pythonid</depends>
+
+    <description>
+        <![CDATA[
+        <h2>Monkey Hint Plugin</h2>
+        <p>
+            Monkey Hint enhances code completion by allowing users to customize hints for specific objects—without modifying any existing code or project files. This plugin offers safe, non-intrusive code assistance for a seamless development experience.
+        </p>
+        <p>
+            Monkey Hint 允许用户为特定符号自定义代码补全提示。
+            它为开发提供了安全、无副作用的代码补全支持。
+        </p>
+    ]]>
+    </description>
+
+    <vendor url="https://plugins.jetbrains.com">IntelliJ Platform SDK</vendor>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectService serviceImplementation="org.monkey.data.MapDataStorage"/>
+        <toolWindow id="Monkey Hint" icon="/icon/monkey.svg" factoryClass="org.monkey.data.MapDataToolWindowFactory" anchor="left" />
+        <completion.contributor implementationClass="org.monkey.contributors.MonkeyCompletionContributor" language="Python"/>
+    </extensions>
+</idea-plugin>
